@@ -1,31 +1,34 @@
 const path = require("path");
 
 const config = {
+    mode: process.env.NODE_ENV || 'development',
     entry: ["@babel/polyfill", "./src/index.js"],
     output: {
         path: path.resolve(__dirname, "build"),
         filename: "main.js",
     },
     devServer: {
-        contentBase: path.resolve(__dirname, 'build'),
+        contentBase: path.resolve(__dirname, "build"),
         compress: true,
-        port: 3000
+        port: 3000,
+        open: true,
+        watchContentBase: true
     },
-    devtool: 'source-map',
+    devtool: "source-map",
+    resolve: {
+        extensions: ['.js', '.jsx', 'json']
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 loader: "babel-loader",
-                options: {
-                    presets: ["@babel/preset-react", "@babel/preset-env"],
-                },
+                exclude: /node_modules/,
             },
-            
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
+                use: ["style-loader", "css-loader"],
+            },
         ],
     },
 };
