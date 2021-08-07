@@ -1,0 +1,13 @@
+.redes{
+
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &-icon{
+        width: 50px;
+        margin: 20px 0;
+    }
+}

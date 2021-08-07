@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Oxygen", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p, a, span, h1, h2, h3, h4, h5, h6, button{
+    color: color('black');
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}

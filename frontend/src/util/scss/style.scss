@@ -1,0 +1,16 @@
+//FONTS
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap");
+
+// ABSTRACTS
+@import 
+    "./abstracts/functions",
+    "./abstracts/color", 
+    "./abstracts/reset",
+    "./abstracts/fonts";
+
+// COMPONENTS
+@import 
+    "./components/nav", 
+    "./components/redes",
+    './components/welcome',
+    './components/buttons';

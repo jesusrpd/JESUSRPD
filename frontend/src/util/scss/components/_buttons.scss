@@ -1,0 +1,20 @@
+%button{
+    padding: 7px;
+    border-radius: 6px;
+    color: color('white');
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+
+.btn{
+
+    &-blue-gradient{
+        @extend %button;
+    }
+
+    &-blue-gradient{
+        background: color('gradient-blue');
+    }
+
+}

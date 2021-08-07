@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Oxygen", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p, a, span, h1, h2, h3, h4, h5, h6, button {
+  color: #29323C;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav {
+  width: 100%;
+  height: fit-content;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-link {
+  margin: 0 10px;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #00B4DB;
+  background: linear-gradient(-45deg, #00B4DB 0%, #0083B0);
+  transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.redes {
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.redes-icon {
+  width: 50px;
+  margin: 20px 0;
+}
+
+.welcome {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.welcome-info p {
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+.welcome-img {
+  width: 30rem;
+}
+.btn-blue-gradient {
+  padding: 7px;
+  border-radius: 6px;
+  color: #ffff;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-blue-gradient {
+  background: linear-gradient(-45deg, #00B4DB 0%, #0083B0);
+}
+
+/*# sourceMappingURL=style.css.map */
