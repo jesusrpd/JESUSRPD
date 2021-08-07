@@ -1,33 +1,34 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 const Nav = () => (
     <nav className="nav">
         <p className="nav-brand">JR</p>
         <ul>
             <li>
-                <a className="nav-link" href="">
+                <Link to="/" className="nav-link" href="">
                     Home
-                </a>
+                </Link>
             </li>
             <li>
-                <a className="nav-link" href="">
+                <Link to="/aboutme" className="nav-link" href="">
                     About me
-                </a>
+                </Link>
             </li>
             <li>
-                <a className="nav-link" href="">
+                <Link to="/briefcase" className="nav-link" href="">
                     Birefcase
-                </a>
+                </Link>
             </li>
             <li>
-                <a className="nav-link" href="">
+                <Link to="/skills" className="nav-link" href="">
                     Skills
-                </a>
+                </Link>
             </li>
             <li>
-                <a className="nav-link" href="">
+                <Link to="/contactme" className="nav-link" href="">
                     Contact me
-                </a>
+                </Link>
             </li>
         </ul>
     </nav>

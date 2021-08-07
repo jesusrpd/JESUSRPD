@@ -94,4 +94,25 @@ a {
   background: linear-gradient(-45deg, #00B4DB 0%, #0083B0);
 }
 
+.briefcase {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  margin-top: 200px;
+}
+.briefcase-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.briefcase-desing, .briefcase-web {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  margin: 50px 10px;
+}
+.briefcase-desing img, .briefcase-web img {
+  width: 500px;
+}
+
 /*# sourceMappingURL=style.css.map */
