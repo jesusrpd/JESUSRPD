@@ -6,6 +6,10 @@
     display: flex;
     flex-direction: column;
 
+    .redes-flex{
+        flex-direction: row;
+    }
+
     &-icon{
         width: 50px;
         margin: 20px 0;

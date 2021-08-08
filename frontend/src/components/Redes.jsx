@@ -5,8 +5,8 @@ import IconInstagram from "../assets/SVG/instagram.svg";
 import IconWhatsapp from "../assets/SVG/whatsapp.svg";
 import IconFacebok from "../assets/SVG/facebook.svg";
 
-const Redes = () => (
-    <div className="redes">
+const Redes = ({flex}) => (
+    <div className={flex === undefined ? "redes": "redes redes-flex"}>
         <a
             href="https://www.facebook.com/profile.php?id=100008217585249"
             target="_blank">

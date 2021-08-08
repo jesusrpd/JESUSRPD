@@ -16,8 +16,8 @@ const App = ()=>(
             <Route exact path="/" component={Welcome}/>
             <Route path="/aboutme" component={Aboutme}/>
             <Route path="/briefcase" component={Briefcase}/>
-            <Route path="/skills" component={Contactme}/>
-            <Route path="/contactme" component={Skills}/>
+            <Route path="/skills" component={Skills}/>
+            <Route path="/contactme" component={Contactme}/>
         </Switch>
     </Router>   
 );

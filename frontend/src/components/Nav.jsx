@@ -1,37 +1,46 @@
-import React from "react";
-import {Link} from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Nav = () => (
-    <nav className="nav">
-        <p className="nav-brand">JR</p>
-        <ul>
-            <li>
-                <Link to="/" className="nav-link" href="">
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link to="/aboutme" className="nav-link" href="">
-                    About me
-                </Link>
-            </li>
-            <li>
-                <Link to="/briefcase" className="nav-link" href="">
-                    Birefcase
-                </Link>
-            </li>
-            <li>
-                <Link to="/skills" className="nav-link" href="">
-                    Skills
-                </Link>
-            </li>
-            <li>
-                <Link to="/contactme" className="nav-link" href="">
-                    Contact me
-                </Link>
-            </li>
-        </ul>
-    </nav>
-);
+const Nav = () => {
+
+    const [tab, setTab] = useState(0);
+
+    const handleTab = i =>{
+        setTab(i);
+    };
+
+    return (
+        <nav className="nav">
+            <p className="nav-brand">JR</p>
+            <ul>
+                <li>
+                    <Link to="/" onClick={()=> handleTab(0)} className={tab === 0 ? "nav-link tab": 'nav-link'}>
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/aboutme" onClick={()=> handleTab(1)} className={tab === 1 ? "nav-link tab": 'nav-link'}>
+                        About me
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/briefcase" onClick={()=> handleTab(2)} className={tab === 2 ? "nav-link tab": 'nav-link'}>
+                        Birefcase
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/skills" onClick={()=> handleTab(3)} className={tab === 3 ? "nav-link tab": 'nav-link'}>
+                        Skills
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/contactme" onClick={()=> handleTab(4)} className={tab === 4 ? "nav-link tab": 'nav-link'}>
+                        Contact me
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
 export default Nav;

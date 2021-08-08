@@ -11,6 +11,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 p, a, span, h1, h2, h3, h4, h5, h6, button {
   color: #29323C;
 }
@@ -26,6 +30,16 @@ li {
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid linear-gradient(-45deg, #00B4DB 0%, #0083B0);
 }
 
 .nav {
@@ -47,7 +61,7 @@ a {
   content: "";
   display: block;
   width: 0%;
-  height: 2px;
+  height: 3px;
   background: #00B4DB;
   background: linear-gradient(-45deg, #00B4DB 0%, #0083B0);
   transition: width 0.3s ease-in-out;
@@ -57,12 +71,25 @@ a {
   transition: width 0.3s ease-in-out;
 }
 
+.tab::after {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 3px;
+  background: #00B4DB;
+  background: linear-gradient(-45deg, #00B4DB 0%, #0083B0);
+  transition: width 0.3s ease-in-out;
+}
+
 .redes {
   position: absolute;
   top: 200px;
   right: 40px;
   display: flex;
   flex-direction: column;
+}
+.redes .redes-flex {
+  flex-direction: row;
 }
 .redes-icon {
   width: 50px;
@@ -98,21 +125,35 @@ a {
   width: 100%;
   height: fit-content;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
+}
+.briefcase-sub {
+  position: absolute;
+  top: 50%;
+  color: #ffff;
+  font-size: 2rem;
 }
 .briefcase-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0 100px;
 }
 .briefcase-desing, .briefcase-web {
-  width: 200px;
-  height: 200px;
+  width: fit-content;
+  height: fit-content;
   border-radius: 25px;
   margin: 50px 10px;
+  position: relative;
 }
 .briefcase-desing img, .briefcase-web img {
   width: 500px;
+}
+
+.contactme {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,8 @@
     "./abstracts/functions",
     "./abstracts/color", 
     "./abstracts/reset",
-    "./abstracts/fonts";
+    "./abstracts/fonts",
+    './abstracts/input';
 
 // COMPONENTS
 @import 
@@ -14,4 +15,5 @@
     "./components/redes",
     './components/welcome',
     './components/buttons',
-    './components/briefcase';
+    './components/briefcase',
+    './components/contactme';

@@ -10,6 +10,10 @@ h1 {
     font-size: 3rem;
 }
 
+h2{
+    font-size: 3rem;
+}
+
 p, a, span, h1, h2, h3, h4, h5, h6, button{
     color: color('black');
 }
@@ -25,4 +29,8 @@ li {
 a {
     display: inline-block;
     text-decoration: none;
+}
+
+button{
+    border: none;
 }
