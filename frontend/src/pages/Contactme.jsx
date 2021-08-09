@@ -2,17 +2,17 @@ import React from "react";
 import Redes from "../components/Redes";
 
 const Contactme = () => (
-    <div className="contactme">
+    <div className="contactme d-flex j-around item-center wh-max">
         <div className="contactme-fomr">
-            <div className="contactme-label">
+            <div className="contactme-label d-flex column j-start">
                 <label htmlFor="">Name:</label>
                 <input type="text" />
             </div>
-            <div className="contactme-label">
+            <div className="contactme-label d-flex column j-start">
                 <label htmlFor="">Phone:</label>
                 <input type="phone" />
             </div>
-            <div className="contactme-label">
+            <div className="contactme-label d-flex column j-start">
                 <label htmlFor="">Comment:</label>
                 <input type="text" />
             </div>

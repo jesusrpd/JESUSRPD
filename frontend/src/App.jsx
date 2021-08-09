@@ -11,7 +11,6 @@ import Redes from "./components/Redes";
 const App = ()=>(
     <Router>
         <Nav/>
-        <Redes />
         <Switch>
             <Route exact path="/" component={Welcome}/>
             <Route path="/aboutme" component={Aboutme}/>

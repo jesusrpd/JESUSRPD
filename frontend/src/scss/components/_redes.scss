@@ -1,0 +1,15 @@
+.redes{
+
+    position: absolute;
+    top: 200px;
+    right: 40px;
+
+    &-icon{
+        width: 50px;
+        margin: 20px;
+    }
+}
+
+.not-redes{
+    display: none;
+}

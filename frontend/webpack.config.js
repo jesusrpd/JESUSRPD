@@ -12,7 +12,8 @@ const config = {
         compress: true,
         port: 3000,
         open: true,
-        watchContentBase: true
+        watchContentBase: true,
+        historyApiFallback: true
     },
     devtool: "source-map",
     resolve: {
@@ -32,6 +33,14 @@ const config = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif|)$/i,
                 type: 'asset/resource'
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
+                ]
             }
         ],
     },

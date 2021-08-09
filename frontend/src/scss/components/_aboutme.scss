@@ -1,0 +1,32 @@
+.aboutme{
+    background: color('gradient-blue');
+
+    &-container{
+        width: 50%;
+    }
+
+    &-info{
+        
+        h2, p{
+            color: color('white');
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p{
+            line-height: 40px;
+            font-weight: bold;
+        }
+    }
+
+    &-slider{
+
+        img{
+            width: inherit;
+            height: inherit;
+        }
+    }
+}

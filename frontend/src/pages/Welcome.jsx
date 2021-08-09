@@ -1,9 +1,10 @@
 import React from "react";
 import PerfilIMG from "../assets/img/perfil.png";
+import Redes from '../components/Redes';
 
 const Welcome = () => (
     <header>
-        <main className="welcome">
+        <main className="welcome d-flex item-center j-around wh-max">
             <div className="welcome-info">
                 <h1>Jesús Rodrigo <br /> Pérez Delgado</h1>
                 <p>
@@ -16,6 +17,7 @@ const Welcome = () => (
                 <img className="welcome-img" src={PerfilIMG} alt="Photo from perfil" />
             </div>
         </main>
+        <Redes />
     </header>
 );
 

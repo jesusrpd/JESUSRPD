@@ -10,7 +10,7 @@ const Nav = () => {
     };
 
     return (
-        <nav className="nav">
+        <nav className="nav d-flex j-between">
             <p className="nav-brand">JR</p>
             <ul>
                 <li>
