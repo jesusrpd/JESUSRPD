@@ -1,0 +1,15 @@
+.skills{
+    padding-top: 200px;
+
+    h2{
+        text-align: center;
+    }
+
+    &-container{
+        margin-top: 50px;
+
+        div div{
+            width: 40%;
+        }
+    }
+}

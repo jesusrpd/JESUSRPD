@@ -1,16 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="386.107" height="504.847" viewBox="0 0 386.107 504.847">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="323" viewBox="0 0 272 323">
   <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_77" data-name="Rectangle 77" width="272" height="323" transform="translate(0 445)" fill="none"/>
+    </clipPath>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#00b3da"/>
       <stop offset="1" stop-color="#0086b3"/>
     </linearGradient>
   </defs>
-  <g id="Group_26" data-name="Group 26" transform="translate(65.107 -412.53)">
-    <rect id="Rectangle_71" data-name="Rectangle 71" width="89" height="368" transform="translate(129.123 555.362) rotate(31)" fill="url(#linear-gradient)"/>
-    <rect id="Rectangle_72" data-name="Rectangle 72" width="35" height="368" transform="translate(242.712 583.913) rotate(31)" fill="url(#linear-gradient)"/>
-    <rect id="Rectangle_73" data-name="Rectangle 73" width="45" height="368" transform="translate(124.427 438.662) rotate(31)" fill="url(#linear-gradient)"/>
-    <rect id="Rectangle_74" data-name="Rectangle 74" width="27" height="110" transform="translate(110.605 426.436) rotate(-31)" fill="#fff"/>
-    <rect id="Rectangle_75" data-name="Rectangle 75" width="46" height="108" transform="translate(125.613 553.436) rotate(-31)" fill="#fff"/>
-    <rect id="Rectangle_76" data-name="Rectangle 76" width="49" height="110" transform="translate(222.345 565.987) rotate(-31)" fill="#fff"/>
+  <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(0 -445)" clip-path="url(#clip-path)">
+    <g id="Group_26" data-name="Group 26">
+      <rect id="Rectangle_71" data-name="Rectangle 71" width="89" height="368" transform="translate(129.123 555.362) rotate(31)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_72" data-name="Rectangle 72" width="35" height="368" transform="translate(242.712 583.913) rotate(31)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_73" data-name="Rectangle 73" width="45" height="368" transform="translate(124.427 438.662) rotate(31)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_74" data-name="Rectangle 74" width="27" height="110" transform="translate(110.605 426.436) rotate(-31)" fill="#fff"/>
+      <rect id="Rectangle_75" data-name="Rectangle 75" width="46" height="108" transform="translate(125.613 553.436) rotate(-31)" fill="#fff"/>
+      <rect id="Rectangle_76" data-name="Rectangle 76" width="49" height="110" transform="translate(222.345 565.987) rotate(-31)" fill="#fff"/>
+    </g>
   </g>
 </svg>

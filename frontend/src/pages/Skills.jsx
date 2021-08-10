@@ -1,15 +1,26 @@
 import React from "react";
-import Redes from '../components/Redes';
+import LoadSkill from "../components/LoadSkill";
+import Redes from "../components/Redes";
 
 const Skills = () => (
     <section>
-        <div className="skills d-flex column">
+        <div className="skills d-flex item-center column wh-max">
             <h2>SKILLS</h2>
-            <div>
-                <h3>Web Development</h3>
+            <div className="skills-container d-flex j-around wh-max">
+                <div>
+                    <div>
+                        <h3>Web Development</h3>
+                        <LoadSkill />
+                        
+                    </div>
+                    <div>
+                        <h3>Software Desing</h3>
+                    </div>
+                </div>
+                <div>
+                    <h3>Software Development</h3>
+                </div>
             </div>
-            <div>Software Desing</div>
-            <div>Software Development</div>
         </div>
         <Redes />
     </section>
