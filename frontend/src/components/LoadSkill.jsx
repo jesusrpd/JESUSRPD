@@ -1,11 +1,13 @@
 import React from "react";
 
-const LoadSkill = ({leng}) => (
+const LoadSkill = ({leng, leftColor, rightColor, port}) => (
     <div className="d-flex item-center">
-        <div className="load load-${leng}">
-            <p>HTML5</p>
+        <div className='load' style={{backgroundImage: `linear-gradient(45deg, ${leftColor}, ${rightColor})`,
+        width: `${port}%`
+    }}>
+            <p>{leng}</p>
         </div>
-        <p className="load-num">100%</p>
+        <p className="load-num">{port}%</p>
     </div>
 );
 

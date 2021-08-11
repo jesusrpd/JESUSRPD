@@ -2,7 +2,6 @@
     padding: 2px 5px;
     border-radius: 50px;
     margin:0 10px 20px 0;
-    width: 100%;
     animation: cargar-skills 1s ease-in-out;
 
     &-num{
@@ -18,17 +17,22 @@
 
     &-html{
         background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+        width: 100%;
     }
     &-css{
-        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+        background-image: linear-gradient(45deg, color('blue-light'), color('blue-dark'));
+        width: 90%;
     }
     &-js{
-        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+        background-image: linear-gradient(45deg, color('yellow-light'), color('yellow-dark'));
+        width: 90%;
     }
     &-reactjs{
-        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+        background-image: linear-gradient(45deg, color('blu-light'), color('blu-dark'));
+        width: 80%;
     }
     &-graphql{
-        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+        background-image: linear-gradient(45deg, color('purple-light'), color('purple-dark'));
+        width: 50%;
     }
 }
