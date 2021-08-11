@@ -19,7 +19,6 @@
         display: block;
         width: 0%;
         height: 3px;
-        background: color("blue");
         background: color("gradient-blue");
         transition: width 0.3s ease-in-out;
     }
@@ -35,7 +34,6 @@
     content: "";
     display: block;
     height: 3px;
-    background: color("blue");
     background: color("gradient-blue");
     transition: width 0.3s ease-in-out;
 }

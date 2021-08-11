@@ -1,7 +1,9 @@
 .load{
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin:0 10px 10px 0;
+    padding: 2px 5px;
+    border-radius: 50px;
+    margin:0 10px 20px 0;
+    width: 100%;
+    animation: cargar-skills 1s ease-in-out;
 
     &-num{
         font-weight: bold;
@@ -11,10 +13,22 @@
     p{
         color: color('white');
         font-weight: bold;
+        text-align: center;
     }
 
     &-html{
         background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
-       
+    }
+    &-css{
+        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+    }
+    &-js{
+        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+    }
+    &-reactjs{
+        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
+    }
+    &-graphql{
+        background-image: linear-gradient(45deg, color('red-light'), color('red-dark'));
     }
 }
