@@ -2,9 +2,15 @@ import React from "react";
 import WebIMG from "../assets/img/webDevelopment.png";
 import DesingIMG from "../assets/img/webDesing.png";
 import Redes from "../components/Redes";
+import { Helmet } from "react-helmet";
+import Nav from '../components/Nav';
 
 const Briefcase = () => (
     <section>
+        <Helmet>
+            <title>Jesus Rodrigo | Briefcase</title>
+        </Helmet>
+        <Nav/>  
         <div className="briefcase wh-max">
             <h2>BRIEFCASE</h2>
             <div className="briefcase-container d-flex j-around">

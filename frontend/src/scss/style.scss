@@ -9,7 +9,8 @@
     "./abstracts/fonts",
     './abstracts/input',
     './abstracts/grid',
-    './abstracts/animations';
+    './abstracts/animations',
+    './abstracts/mixin';
 
 // COMPONENTS
 @import 
@@ -21,4 +22,5 @@
     './components/contactme',
     './components/aboutme',
     './components/skills',
-    './components/loadSkills';
+    './components/loadSkills',
+    './components/swiper';

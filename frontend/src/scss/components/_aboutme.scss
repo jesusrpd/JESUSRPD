@@ -1,10 +1,6 @@
 .aboutme{
     background: color('gradient-blue');
 
-    &-container{
-        width: 50%;
-    }
-
     &-info{
         
         h2, p{
@@ -25,7 +21,7 @@
     &-slider{
 
         img{
-            width: inherit;
+            width: 800px;
             height: inherit;
         }
     }

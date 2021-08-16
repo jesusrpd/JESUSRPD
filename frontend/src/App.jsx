@@ -5,18 +5,16 @@ import Aboutme from './pages/Aboutme';
 import Briefcase from './pages/Briefcase';
 import Contactme from './pages/Contactme';
 import Skills from './pages/Skills';
-import Nav from './components/Nav';
-import Redes from "./components/Redes";
+import {PATH_WELCOME, PATH_ABOUTME, PATH_CONTACTME, PATH_SKILLS, PATH_BRIEFCASE} from './routes/paths.routes';
 
 const App = ()=>(
     <Router>
-        <Nav/>
         <Switch>
-            <Route exact path="/" component={Welcome}/>
-            <Route path="/aboutme" component={Aboutme}/>
-            <Route path="/briefcase" component={Briefcase}/>
-            <Route path="/skills" component={Skills}/>
-            <Route path="/contactme" component={Contactme}/>
+            <Route exact path={PATH_WELCOME} component={Welcome}/>
+            <Route path={PATH_ABOUTME} component={Aboutme}/>
+            <Route path={PATH_BRIEFCASE} component={Briefcase}/>
+            <Route path={PATH_SKILLS} component={Skills}/>
+            <Route path={PATH_CONTACTME} component={Contactme}/>
         </Switch>
     </Router>   
 );
