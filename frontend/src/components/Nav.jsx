@@ -18,18 +18,23 @@ const Nav = () => {
     };
 
     useEffect(()=>{
-        console.log(history.location.pathname);
-    },[]);
+        if (history.location.pathname === PATH_ABOUTME) {
+            setLight(true);
+        }else{
+            setLight(false);
+        }
+
+    },[PATH_ABOUTME, tab]);
 
     return (
         <nav className="nav d-flex j-between">
-            <p className="nav-brand">JR</p>
+            <p className={light ? "nav-brand-light": "nav-brand"}>JR</p>
             <ul>
                 <li>
                     <Link
                         to={PATH_WELCOME}
                         onClick={() => handleTab(0)}
-                        className={tab === 0 ? "nav-link tab" : "nav-link"}>
+                        className={light ? tab === 0 ? "nav-link-light tab-link" : "nav-link-light" : tab === 0 ? "nav-link tab" : "nav-link"}>
                         Home
                     </Link>
                 </li>
@@ -37,7 +42,7 @@ const Nav = () => {
                     <Link
                         to={PATH_ABOUTME}
                         onClick={() => handleTab(1)}
-                        className={tab === 1 ? "nav-link tab" : "nav-link"}>
+                        className={light ? tab === 1 ? "nav-link-light tab-light" : "nav-link-light" : tab === 1 ? "nav-link tab" : "nav-link"}>
                         About me
                     </Link>
                 </li>
@@ -45,7 +50,7 @@ const Nav = () => {
                     <Link
                         to={PATH_BRIEFCASE}
                         onClick={() => handleTab(2)}
-                        className={tab === 2 ? "nav-link tab" : "nav-link"}>
+                        className={light ? tab === 2 ? "nav-link-light tab-light" : "nav-link-light" : tab === 2 ? "nav-link tab" : "nav-link"}>
                         Birefcase
                     </Link>
                 </li>
@@ -53,7 +58,7 @@ const Nav = () => {
                     <Link
                         to={PATH_SKILLS}
                         onClick={() => handleTab(3)}
-                        className={tab === 3 ? "nav-link tab" : "nav-link"}>
+                        className={light ? tab === 3 ? "nav-link-light tab-light" : "nav-link-light" : tab === 3 ? "nav-link tab" : "nav-link"}>
                         Skills
                     </Link>
                 </li>
@@ -61,7 +66,7 @@ const Nav = () => {
                     <Link
                         to={PATH_CONTACTME}
                         onClick={() => handleTab(4)}
-                        className={tab === 4 ? "nav-link tab" : "nav-link"}>
+                        className={light ? tab === 4 ? "nav-link-light tab" : "nav-link-light" : tab === 4 ? "nav-link tab" : "nav-link"}>
                         Contact me
                     </Link>
                 </li>

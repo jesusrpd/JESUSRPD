@@ -93,11 +93,17 @@ input {
   font-size: 2rem;
   font-weight: bold;
 }
+.nav-brand-light {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffff;
+}
 .nav-link {
   margin: 0 10px;
 }
 .nav-link-light {
   color: #ffff;
+  margin: 0 10px;
 }
 .nav-link::after {
   content: "";
@@ -111,6 +117,18 @@ input {
   width: 100%;
   transition: width 0.3s ease-in-out;
 }
+.nav-link-light::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: #ffff;
+  transition: width 0.3s ease-in-out;
+}
+.nav-link-light:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
 
 .tab::after {
   width: 100%;
@@ -121,14 +139,27 @@ input {
   transition: width 0.3s ease-in-out;
 }
 
+.tab-light::after {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 3px;
+  background: #ffff;
+  transition: width 0.3s ease-in-out;
+}
+
 .redes {
   position: absolute;
   top: 200px;
-  right: 40px;
+  right: 30px;
 }
 .redes-icon {
   width: 50px;
-  margin: 20px 20px 20px 0;
+  margin: 20px 0px 20px 0;
+}
+
+.cls-1 {
+  fill: #8b5050;
 }
 
 .not-redes {

@@ -31,12 +31,19 @@ const config = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif|)$/i,
+                test: /\.(png|jp(e*)g|jpeg|gif|)$/i,
                 type: 'asset/resource'
             },
             {
                 test: /\.(otf|pdf)$/,
-                loader: 'file-loader'
+                loader: 'file-loader',
+                options: {
+                    name: 'images/[hash]-[name].[ext]'
+                }
+            },
+            {
+                test: /\.svg$/,
+                use: ['@svgr/webpack']
             }
         ],
     },
