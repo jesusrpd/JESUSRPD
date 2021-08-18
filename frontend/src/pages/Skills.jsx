@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import LoadSkill from "../components/LoadSkill";
 import Redes from "../components/Redes";
 import Nav from '../components/Nav';
+import SkillsWeb from "../components/SkillsLenguagues";
 
 const Skills = () => {
     const lenguagues = [
@@ -110,47 +110,20 @@ const Skills = () => {
                     <div className="skills-web">
                         <h3>Web development</h3>
                         <div className="d-flex column">
-                            {lenguagues.map((lenguague) => (
-                                <LoadSkill
-                                    key={lenguague.lenguague}
-                                    leng={lenguague.lenguague}
-                                    port={lenguague.port}
-                                    leftColor={lenguague.leftColor}
-                                    rightColor={lenguague.rightColor}
-                                    clases={lenguague.clases}
-                                />
-                            ))}
+                            <SkillsWeb lenguagues={lenguagues}/>
                         </div>
                     </div>
                     <div className="skills-design">
                         <h3>Design</h3>
                         <div className="d-flex column">
-                            {designs.map((design) => (
-                                <LoadSkill
-                                    key={design.lenguague}
-                                    leng={design.lenguague}
-                                    port={design.port}
-                                    leftColor={design.leftColor}
-                                    rightColor={design.rightColor}
-                                    clases={design.clases}
-                                />
-                            ))}
+                            <SkillsWeb lenguagues={designs}/>
                         </div>
                     </div>
                 </div>
                 <div className="skills-software">
                     <h3>Software development</h3>
                     <div className="d-flex column">
-                        {softwares.map((sowftware) => (
-                            <LoadSkill
-                                key={sowftware.lenguague}
-                                leng={sowftware.lenguague}
-                                port={sowftware.port}
-                                leftColor={sowftware.leftColor}
-                                rightColor={sowftware.rightColor}
-                                clases={sowftware.clases}
-                            />
-                        ))}
+                        <SkillsWeb lenguagues={softwares}/>
                     </div>
                 </div>
             </div>

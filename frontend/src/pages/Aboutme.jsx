@@ -1,50 +1,18 @@
 import React from "react";
 import Redes from "../components/Redes";
-import WebIMG from "../assets/img/webDevelopment.png";
 import { Helmet } from "react-helmet";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css";
-import "swiper/components/pagination/pagination.min.css";
-import SwiperCore, {
-    Navigation,
-    Pagination,
-    Mousewheel,
-    Keyboard,
-} from "swiper/core";
-SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 import ImgSlide from "../assets/img/slide.png";
-import Nav from '../components/Nav';
+import Nav from "../components/Nav";
 
 const Aboutme = () => (
     <section>
         <Helmet>
             <title>Jesus Rodrigo | About me</title>
         </Helmet>
-        <Nav/>
+        <Nav />
 
         <div className="aboutme wh-max d-flex item-center j-around">
             <div className="aboutme-container aboutme-slider">
-                {/* <Swiper
-                    cssMode={true}
-                    navigation={true}
-                    pagination={true}
-                    mousewheel={true}
-                    keyboard={true}
-                    className="mySwiper">
-                    <SwiperSlide>
-                        <img src={ImgSlide} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={ImgSlide} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={ImgSlide} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={ImgSlide} alt="" />
-                    </SwiperSlide>
-                </Swiper> */}
                 <img src={ImgSlide} alt="" />
             </div>
             <div className="aboutme-container aboutme-info">

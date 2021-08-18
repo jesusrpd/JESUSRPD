@@ -6,13 +6,16 @@
 
     &-icon{
         width: 50px;
-        margin:20px 0px 20px 0;
+        margin:20px 5px;
     }
 }
 
-.cls-1{
-    fill: rgb(139, 80, 80);
-    
+.blue{
+    fill: color('primary');
+}
+
+.light{
+    fill: color('white');
 }
 
 .not-redes{

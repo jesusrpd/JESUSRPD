@@ -155,11 +155,15 @@ input {
 }
 .redes-icon {
   width: 50px;
-  margin: 20px 0px 20px 0;
+  margin: 20px 5px;
 }
 
-.cls-1 {
-  fill: #8b5050;
+.blue {
+  fill: #00B4DB;
+}
+
+.light {
+  fill: #ffff;
 }
 
 .not-redes {
@@ -272,6 +276,7 @@ input {
   padding: 2px 5px;
   border-radius: 50px;
   margin: 0 10px 20px 0;
+  animation: 2s colorDinamic ease-in-out infinite;
 }
 .load-num {
   font-weight: bold;
