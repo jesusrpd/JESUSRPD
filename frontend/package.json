@@ -4,9 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "webpack --mode=production",
-        "start": "webpack serve --mode=development",
-        "sass": "sass --watch src/scss/style.scss src/css/style.css"
+        "build:ui": "webpack --mode=production",
+        "dev:ui": "webpack serve --mode=development",
+        "sass": "sass --watch src/scss/style.scss src/css/style.css",
+        "api": "nodemon backend/index.js --exec babel-node",
+        "start": "node build/index.js",
+        "build:back": "babel backend --out-dir build"
     },
     "keywords": [],
     "author": "",

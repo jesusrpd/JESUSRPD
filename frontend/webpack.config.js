@@ -4,11 +4,11 @@ const config = {
     mode: process.env.NODE_ENV || "development",
     entry: ["@babel/polyfill", "./src/index.js"],
     output: {
-        path: path.resolve(__dirname, "build"),
+        path: path.resolve(__dirname, "dist"),
         filename: "main.js",
     },
     devServer: {
-        contentBase: path.resolve(__dirname, "build"),
+        contentBase: path.resolve(__dirname, "dist"),
         compress: true,
         port: 3000,
         open: true,
