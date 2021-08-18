@@ -1,6 +1,8 @@
+import config from './config';
+import './database';
 import app from "./app";
 
 (async () => {
-    await app.listen(4000);
-    console.log("Server listen on port", 4000);
+    await app.listen(config.PORT);
+    console.log("Server listen on port", config.PORT);
 })();
