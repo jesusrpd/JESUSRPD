@@ -1,0 +1,25 @@
+import Skill from "../models/skill";
+
+export const getSkills = async (req, res) => {
+    const skills = await Skill.find();
+    res.status(200).json(skills);
+};
+
+export const createSkill = async (req, res) => {
+    const { name, port, background, color, clases } = req.body;
+
+    const newSkill = new Skill({
+        name,
+        port,
+        background,
+        color,
+        clases,
+    });
+    await newSkill.save();
+    res.status(200).json(newSkill);
+};
+
+export const deleteSkill = async (req, res) => {
+    await Skill.findByIdAndDelete(req.params.id);
+    res.status(200).json('Skill delete');
+};
