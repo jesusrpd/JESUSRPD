@@ -1,9 +1,9 @@
 import React from "react";
 import { PATH_API } from "../routes/paths.routes";
-import useSkill from '../hooks/useSkills';
+import useSkill from "../hooks/useSkills";
+import SkillsLenguagues from "../components/SkillsLenguagues";
 
 const SkillDesign = () => {
-
     const { skill } = useSkill(`${PATH_API}/skills/design`);
 
     return (

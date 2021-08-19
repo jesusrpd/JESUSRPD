@@ -11,9 +11,32 @@
         font-size: 2rem;
     }
 
+    &-card{
+        background: #084c27;
+        width: 570px;
+        height: 246px;
+        border-radius: 9px;
+        margin: 0 10px 10px 0;
+
+        div{
+            height: 246px;
+        }
+
+        img{
+            height: 246px;
+        }
+    }
+
     &-container{
         align-items: center;
         padding: 0 100px;
+
+        &-card{
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 50px;
+
+        }
     }
 
     &-desing, &-web{

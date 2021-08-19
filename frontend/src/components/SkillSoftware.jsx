@@ -1,10 +1,10 @@
 import React from "react";
 import { PATH_API } from "../routes/paths.routes";
-import useSkill from '../hooks/useSkills';  
+import useSkill from "../hooks/useSkills";
+import SkillsLenguagues from "../components/SkillsLenguagues";
 
 const SkillSoftware = () => {
-
-    const { skill } = useSkill(`${PATH_API}/skills/softwares`);
+    const { skill } = useSkill(`${PATH_API}/skills/software`);
 
     return (
         <div className="skills-software">

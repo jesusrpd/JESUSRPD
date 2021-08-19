@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {PATH_API} from '../routes/paths.routes';
 import SkillsLenguagues from './SkillsLenguagues';
 import useSkill from '../hooks/useSkills';
 
-const SkillWeb = () => {
+const SkillWeb = ( ) => {
 
-    const { skill } = useSkill(`${PATH_API}/skills/web`);
+    const {skill} = useSkill(`${PATH_API}/skills/web`);
 
     return (
         <div className="skills-web">

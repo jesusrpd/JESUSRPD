@@ -202,9 +202,27 @@ input {
   color: #ffff;
   font-size: 2rem;
 }
+.briefcase-card {
+  background: #084c27;
+  width: 570px;
+  height: 246px;
+  border-radius: 9px;
+  margin: 0 10px 10px 0;
+}
+.briefcase-card div {
+  height: 246px;
+}
+.briefcase-card img {
+  height: 246px;
+}
 .briefcase-container {
   align-items: center;
   padding: 0 100px;
+}
+.briefcase-container-card {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 .briefcase-desing, .briefcase-web {
   width: fit-content;
