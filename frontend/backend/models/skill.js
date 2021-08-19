@@ -6,6 +6,7 @@ const skillSchema = new Schema({
     background: String,
     color: String,
     clases: String,
+    category: String
 });
 
 export default model("Skill", skillSchema);

@@ -1,9 +1,8 @@
 import React from "react";
 
-const LoadSkill = ({ leng, leftColor, rightColor, port, clases }) => {
+const LoadSkill = ({ name, background, color, port, clases }) => {
     const style = {
-        animation: "colorDinamic 2s ease-in-out infinite",
-        backgroundImage: `linear-gradient(45deg, ${leftColor}, ${rightColor})`,
+        background: `${background}`,
         width: `${port}%`,
     };
 
@@ -13,7 +12,7 @@ const LoadSkill = ({ leng, leftColor, rightColor, port, clases }) => {
               
             </style>
             <div className={clases} style={style}>
-                <p>{leng}</p>
+                <p  style={{color: `${color}`}}>{name}</p>
             </div>
             <p className="load-num">{port}%</p>
         </div>

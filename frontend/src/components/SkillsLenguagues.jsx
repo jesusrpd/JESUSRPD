@@ -5,11 +5,11 @@ const SkillsWeb = ({lenguagues}) => (
     <>
         {lenguagues.map((lenguague) => (
             <LoadSkill
-                key={lenguague.lenguague}
-                leng={lenguague.lenguague}
+                key={lenguague._id}
+                name={lenguague.name}
                 port={lenguague.port}
-                leftColor={lenguague.leftColor}
-                rightColor={lenguague.rightColor}
+                background={lenguague.background}
+                color={lenguague.color}
                 clases={lenguague.clases}
             />
         ))}
