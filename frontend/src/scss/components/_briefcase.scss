@@ -13,17 +13,41 @@
 
     &-card{
         background: #084c27;
-        width: 570px;
-        height: 246px;
+        width: 650px;
+        height: fit-content;
         border-radius: 9px;
-        margin: 0 10px 10px 0;
+        margin: 0 40px 40px 0;
 
-        div{
-            height: 246px;
+        &-btn{
+            padding: 2px 20px;
+            border-radius: 6px;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        &-info h3, &-info p{
+            color: color('white');
+            margin-bottom: 20px;
+        }
+
+        &-info p{
+            text-align: left;
         }
 
         img{
             height: 246px;
+        }
+    }
+
+    &-tecnologias{
+        
+        h4{
+            color: color('white');
+            margin-bottom: 10px;
+        }
+
+        &-icon{
+            margin-right: 10px;
         }
     }
 
@@ -32,7 +56,8 @@
         padding: 0 100px;
 
         &-card{
-            width: 70%;
+            width: 80%;
+            flex-wrap: wrap;
             margin: 0 auto;
             margin-top: 50px;
 

@@ -189,6 +189,10 @@ input {
 .btn-blue-gradient {
   background: linear-gradient(-45deg, #00B4DB 0%, #0083B0);
 }
+.btn-white {
+  background: #ffff;
+  color: #084c27;
+}
 
 .briefcase {
   height: fit-content;
@@ -204,23 +208,41 @@ input {
 }
 .briefcase-card {
   background: #084c27;
-  width: 570px;
-  height: 246px;
+  width: 650px;
+  height: fit-content;
   border-radius: 9px;
-  margin: 0 10px 10px 0;
+  margin: 0 40px 40px 0;
 }
-.briefcase-card div {
-  height: 246px;
+.briefcase-card-btn {
+  padding: 2px 20px;
+  border-radius: 6px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.briefcase-card-info h3, .briefcase-card-info p {
+  color: #ffff;
+  margin-bottom: 20px;
+}
+.briefcase-card-info p {
+  text-align: left;
 }
 .briefcase-card img {
   height: 246px;
+}
+.briefcase-tecnologias h4 {
+  color: #ffff;
+  margin-bottom: 10px;
+}
+.briefcase-tecnologias-icon {
+  margin-right: 10px;
 }
 .briefcase-container {
   align-items: center;
   padding: 0 100px;
 }
 .briefcase-container-card {
-  width: 70%;
+  width: 80%;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 50px;
 }
