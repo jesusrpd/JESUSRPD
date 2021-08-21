@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import IconLinkedin from "../assets/SVG/linkedin.svg";
-import IconGitHub from "../assets/SVG/github.svg";
-import IconInstagram from "../assets/SVG/instagram.svg";
-import IconWhatsapp from "../assets/SVG/whatsapp.svg";
-import IconFacebook from "../assets/SVG/facebook.svg";
+import {ReactComponent as IconLinkedin} from "../assets/SVG/linkedin.svg";
+import {ReactComponent as IconGitHub} from "../assets/SVG/github.svg";
+import {ReactComponent as IconInstagram} from "../assets/SVG/instagram.svg";
+import {ReactComponent as IconWhatsapp} from "../assets/SVG/whatsapp.svg";
+import {ReactComponent as IconFacebook} from "../assets/SVG/facebook.svg";
 import { useHistory } from "react-router-dom";
 import { PATH_ABOUTME } from "../routes/paths.routes";
 
 const Redes = ({ flex }) => {
     let history = useHistory();
-    const [light, setLight] = useState(false);
+    const [light, setLight] = useState(false);  
 
     useEffect(() => {
         if (history.location.pathname === PATH_ABOUTME) {
