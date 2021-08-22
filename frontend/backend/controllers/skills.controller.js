@@ -14,7 +14,7 @@ export const createSkill = async (req, res) => {
         background,
         color,
         clases,
-        category
+        category,
     });
     await newSkill.save();
     res.status(200).json(newSkill);
@@ -27,11 +27,11 @@ export const deleteSkill = async (req, res) => {
 
 export const updateSkill = async (req, res) => {
     const { category } = req.body;
-    await Skill.findOneAndUpdate(req.params.id, {category});
+    await Skill.findOneAndUpdate(req.params.id, { category });
     res.status(200).json("Skill Update");
 };
 
-export const getCategory = async (req, res)=>{
-    const lenguague = await Skill.find({category: req.params.category});
+export const getCategory = async (req, res) => {
+    const lenguague = await Skill.find({ category: req.params.category });
     res.status(200).json(lenguague);
-}
+};

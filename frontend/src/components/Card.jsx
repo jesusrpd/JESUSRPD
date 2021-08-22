@@ -1,11 +1,12 @@
 import React from "react";
 
 const Card = ({ items }) => {
-
-    const style = {color: `${items.color}`}
+    const style = { color: `${items.color}` };
 
     return (
-        <div style={{background: `${items.background}`}} className="briefcase-card d-flex item-center">
+        <div
+            style={{ background: `${items.background}` }}
+            className="briefcase-card d-flex item-center">
             <div>
                 <img
                     className="briefcase-card-port"
@@ -17,13 +18,19 @@ const Card = ({ items }) => {
                 <h3 style={style}>{items.title}</h3>
                 <p style={style}>{items.description}</p>
                 <div className="d-flex item-center briefcase-tec">
-                    <a style={{background: `${items.color}`, color: `${items.background}`}} href="#" className="briefcase-card-btn">
+                    <a
+                        style={{
+                            background: `${items.color}`,
+                            color: `${items.background}`,
+                        }}
+                        href="#"
+                        className="briefcase-card-btn">
                         Visitar
                     </a>
                     <div className="briefcase-tecnologias">
                         <h4 style={style}>Tecnologías usadas:</h4>
                         <div className="d-flex item-center j-center">
-                            {items.icons.map((icon, index) => (
+                            {items.iconUrl.map((icon, index) => (
                                 <img
                                     key={index}
                                     src={icon}
